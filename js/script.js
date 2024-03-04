@@ -8,6 +8,11 @@ document.querySelector(".register-btn").addEventListener("click", () => {
     return;
   }
 
+  if (count === 0) {
+    alert(`${name}님, 저와 취향이 하나도 같지 않으시네요.`);
+    return;
+  }
+
   alert(`${name}님, 저와 ${count}개의 취향이 같으시네요!`);
 });
 
